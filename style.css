@@ -1,0 +1,254 @@
+#nav-bar {
+  width: 100%;
+  max-height: 30%;
+  background-color: aliceblue;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 5% 13% 54% 15% 10%;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  border-top: 1em;
+}
+#company-name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.6em;
+  justify-self: center;
+  padding-left: 1em;
+}
+#header-img {
+  justify-self: start;
+  width: 100%;
+  height: auto;
+  padding-left: 1em;
+}
+.nav-link {
+  font-size: 1.5rem;
+  justify-self: end;
+  align-self: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product-description {
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+/* end of navigation style */
+
+body {
+  background-color: rgb(245, 252, 250);
+}
+main {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+#submit-section {
+  text-align: center;
+}
+#form-caption {
+  margin-top: 2em;
+  font-size: 3em;
+  font-weight: bold;
+}
+#email {
+  margin: auto;
+  width: 30%;
+  height: 2em;
+}
+#submit {
+  background-color: yellow;
+  border-radius: 3em;
+  border-width: 3px;
+  margin-top: 1em;
+  width: 10%;
+  height: 2em;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background-color 1s;
+}   
+#submit:hover {
+  background-color: rgb(53, 205, 50);
+}
+
+/* end of submit-section */
+
+#features-section {
+  padding-top: 5em;
+  padding-left: 10em;
+  width: 80%;
+  height: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(3,1fr);
+  row-gap: 30px;
+}
+.elements {
+  display: grid;
+  width: 100%;
+  height: auto;
+  column-gap: 30px;
+  justify-content: start;
+  grid-template-areas: 
+  "A A A A  B B B B  B B B B"
+  "A A A A  C C C C  C C C C"
+  "A A A A  C C C C  C C C C";
+}
+.features-icons {
+  margin: 0;
+  display: block;
+  width: 130px;
+  height: auto;
+  grid-area: A;
+}
+.description-caption {
+  margin: 0;
+  display: block;
+  grid-area: B;
+  align-self: end;
+  font-size: 2em;
+  font-style: italic;
+}
+.description-text{
+  margin: 0;
+  display: block;
+  grid-area: C;
+  align-self: start;
+  font-size: 1.3em;
+}
+
+/* end of features-section */
+
+#video-section {
+  padding-top: 5em;
+  margin: auto;
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#video-caption {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+}
+#video-notice {
+  margin: 10px;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+#video {
+  background-color: black;
+  margin: 10px;
+  padding: 0;
+  border: 8px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  align-self: center;
+}
+
+/* end of video-section */
+
+#product-caption {
+  padding-top: 3em;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2em;
+  margin: 0;
+}
+#product-section {
+  display: grid;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  grid-template-columns: repeat(3 , 1fr);
+  justify-content: center;
+  padding-bottom: 3em;
+}
+.product-items {
+  display: grid;
+  margin: 5px;
+  border: 3px;
+  border-style: dashed;
+  border-color: black;
+  border-radius: 15px;
+}
+.product-img {
+  margin-bottom: 10px;
+  width: auto;
+  height: 400px;
+  justify-self: center;
+}
+.product-name {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #9d8cdbbb;
+}
+.product-price {
+  margin: 0;
+  text-align: center;
+  font-size: 1.3em;
+  background-color: #b1a0eebb;
+}
+.product-description {
+  margin: 0;
+  background-color: #c5c5f2cc;
+}
+.product-btn {
+  height: 1.7em;
+  background-color: rgb(243, 243, 140);
+  transition: background-color 1s;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  
+}
+.product-btn:hover {
+  background-color: yellowgreen;
+}
+
+/* end of product-section */
+
+footer {
+  margin: auto;
+  text-align: center;
+  width: 30%;
+  background-color: rgb(159, 188, 246);
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  display: grid;
+  justify-content: center;
+  grid-template-areas: 
+    "A A A A  B B B B  C C C C"
+    "D D D D  D D D D  D D D D";
+}
+#footer-privacy {
+  margin: 0;
+  grid-area: A;
+  align-self: end;
+}
+#footer-terms {
+  margin: 0;
+  grid-area: B;
+} 
+#footer-contact {
+  margin: 0;
+  grid-area: C;
+}
+#footer-copyright {
+  margin: 0;
+  grid-area: D;
+  justify-self: center;
+}
